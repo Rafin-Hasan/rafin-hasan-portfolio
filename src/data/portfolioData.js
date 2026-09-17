@@ -20,69 +20,181 @@ export const skillsData = [
   {
     category: "Frontend Architecture",
     description: "Creating fluid, hyper-responsive interfaces with uncompromising attention to typography and motion.",
-    skills: ["React 18/19", "Next.js", "TypeScript", "Tailwind CSS", "Vite", "State Management", "Component Systems", "Web Performance"]
+    skills: ["React 18/19", "Next.js 14/15", "TypeScript", "Tailwind CSS", "Vite", "Framer Motion", "Component Systems", "Web Performance"]
   },
   {
     category: "Backend & Systems",
     description: "Architecting low-latency APIs, resilient data streams, and decoupled microservices.",
-    skills: ["Node.js", "Express", "Python", "RESTful APIs", "GraphQL", "WebSockets", "Authentication & JWT", "Serverless Functions"]
+    skills: ["Node.js", "Express", "Python", "RESTful APIs", "GraphQL", "WebSockets", "Claude AI Integration", "Serverless Functions"]
   },
   {
     category: "Cloud, DevOps & Tooling",
     description: "Automating zero-downtime continuous deployment workflows and reproducible environments.",
-    skills: ["Vercel", "Docker", "GitHub Actions", "Git & GitHub", "CI/CD Workflows", "Linux Systems", "Nginx", "Postman"]
+    skills: ["Vercel", "GitHub Actions", "Docker", "Git & GitHub", "CI/CD Automation", "Linux Systems", "Neon Postgres", "Postman"]
   },
   {
     category: "Databases & Storage",
     description: "Structuring scalable schemas, high-efficiency caching layers, and performant indexing.",
-    skills: ["PostgreSQL", "MongoDB", "Redis", "Prisma ORM", "Supabase", "Firebase", "SQL Optimization", "Data Modeling"]
+    skills: ["PostgreSQL", "Prisma ORM", "MongoDB", "Redis", "Supabase", "Firebase", "SQL Optimization", "Data Modeling"]
   }
 ];
 
 export const projectsData = [
   {
-    id: "saas-orchestrator",
-    title: "SaaS Project Management Engine",
-    subtitle: "Enterprise Task & Workflow Suite",
+    id: "efootball-league",
+    title: "Local eFootball League Platform",
+    subtitle: "Tournament & AI Analytics Engine",
+    category: "Full-Stack & Apps",
+    description: "High-performance tournament platform for 1v1 eFootball leagues with live standings, player Elo ratings, automated fixture generation, and an integrated Claude AI Copilot for match analysis.",
+    tags: ["Next.js 14", "TypeScript", "Prisma", "PostgreSQL", "Framer Motion", "Claude AI"],
+    github: "https://github.com/Rafin-Hasan/local-efootball-league",
+    liveUrl: "https://github.com/Rafin-Hasan/local-efootball-league",
+    featured: true,
+    isLive: false,
+    highlights: ["AI Match Analyst Copilot", "Sub-50ms client navigation", "Neon pooled PostgreSQL"]
+  },
+  {
+    id: "anime-stream",
+    title: "AnimeStreaming Media Portal",
+    subtitle: "Video Streaming & Community Hub",
+    category: "Live Vercel Sites",
+    description: "High-density anime streaming platform featuring an interactive media catalog, responsive video playback, episode lists, and an ultra-clean modern dark interface.",
+    tags: ["React", "Tailwind CSS", "Vercel", "Video Player", "Modern UI"],
+    github: "https://github.com/Rafin-Hasan/team-alpha",
+    liveUrl: "https://animewebsite-blue.vercel.app",
+    featured: true,
+    isLive: true,
+    highlights: ["Live on Vercel", "Interactive media catalog", "Custom video player UI"]
+  },
+  {
+    id: "ebtan-cosmetics",
+    title: "Ebtan Cosmetics Storefront",
+    subtitle: "Luxury Beauty & Skincare E-Commerce",
+    category: "Live Vercel Sites",
+    description: "Premium e-commerce storefront for beauty & skincare featuring fluid product catalog filtering, mobile quick-cart drawer, and editorial-grade aesthetic design.",
+    tags: ["React", "Tailwind CSS", "E-Commerce", "Vercel", "Responsive"],
+    github: "https://github.com/Rafin-Hasan/Website-4",
+    liveUrl: "https://ebtancosmetics.vercel.app",
+    featured: true,
+    isLive: true,
+    highlights: ["Live on Vercel", "Luxury editorial aesthetic", "Interactive catalog drawer"]
+  },
+  {
+    id: "lemon-warles",
+    title: "Lemon Warles Creative Agency",
+    subtitle: "Digital Brand & Design Agency Site",
+    category: "Live Vercel Sites",
+    description: "Contemporary agency portfolio and client acquisition platform featuring bold typography, glassmorphic layout, high-conversion contact funnel, and fluid micro-interactions.",
+    tags: ["React", "Tailwind CSS", "Vercel", "Branding", "Landing Page"],
+    github: "https://github.com/Rafin-Hasan/Website-02",
+    liveUrl: "https://lemonwarles.vercel.app",
+    featured: false,
+    isLive: true,
+    highlights: ["Live on Vercel", "Subtle motion design", "Glassmorphic hero section"]
+  },
+  {
+    id: "make-fun-app",
+    title: "Make Fun With Friends",
+    subtitle: "Viral Social Interactive Web App",
+    category: "Live Vercel Sites",
+    description: "Engaging interactive social web mini-game application built for fast viral sharing, dynamic DOM canvas animations, and instant responsive mobile feedback.",
+    tags: ["JavaScript", "HTML5 Canvas", "CSS3", "Vercel", "Interactive"],
+    github: "https://github.com/Rafin-Hasan/Make-fun-with-friend",
+    liveUrl: "https://make-fun-with-friend.vercel.app",
+    featured: false,
+    isLive: true,
+    highlights: ["Live on Vercel", "Zero external bloat", "Viral social interactions"]
+  },
+  {
+    id: "saas-project-management",
+    title: "SaaS Project Management Suite",
+    subtitle: "Enterprise Workflow & Task Engine",
+    category: "SaaS & Fintech",
     description: "Full-featured collaborative management suite with real-time state synchronization, automated task pipelines, and high-density performance dashboards.",
     tags: ["React", "Tailwind CSS", "TypeScript", "Node.js", "WebSockets"],
     github: "https://github.com/Rafin-Hasan/landing-saas-project-management-2026-09-17",
-    demo: "https://github.com/Rafin-Hasan",
+    liveUrl: "https://github.com/Rafin-Hasan/landing-saas-project-management-2026-09-17",
     featured: true,
-    highlights: ["Sub-50ms sync", "Kanban drag-and-drop", "Automated telemetry"]
+    isLive: false,
+    highlights: ["Real-time state sync", "Kanban drag-and-drop", "Automated telemetry"]
   },
   {
-    id: "landing-bot",
-    title: "Autonomous Web Generator",
-    subtitle: "AI-Augmented Landing Engine",
-    description: "Automated multi-tenant web platform generating semantic, accessible, and ultra-performant landing sites with automated GitHub commits and builds.",
-    tags: ["React", "Tailwind CSS", "Node.js", "Puppeteer", "Vite"],
-    github: "https://github.com/Rafin-Hasan/daily-landing-pages-bot",
-    demo: "https://github.com/Rafin-Hasan",
-    featured: true,
-    highlights: ["Zero-config pipelines", "100 Lighthouse score", "Modular system"]
-  },
-  {
-    id: "cyber-telemetry",
-    title: "CyberShield Security Intelligence",
-    subtitle: "Threat Telemetry & Anomaly Radar",
-    description: "High-throughput security monitoring interface mapping active network intrusion vectors, TLS health, and automated firewall response protocols.",
+    id: "cyber-security",
+    title: "CyberShield Security Consulting",
+    subtitle: "Intrusion Radar & Threat Telemetry",
+    category: "Full-Stack & Apps",
+    description: "High-throughput security intelligence interface mapping active network intrusion vectors, TLS health, cryptographic auditing, and automated response protocols.",
     tags: ["React", "Next.js", "Tailwind CSS", "FastAPI", "PostgreSQL"],
     github: "https://github.com/Rafin-Hasan/landing-cybersecurity-consulting-2026-09-10",
-    demo: "https://github.com/Rafin-Hasan",
-    featured: true,
+    liveUrl: "https://github.com/Rafin-Hasan/landing-cybersecurity-consulting-2026-09-10",
+    featured: false,
+    isLive: false,
     highlights: ["Real-time threat graph", "Zero-trust verification", "Encrypted audit logs"]
   },
   {
-    id: "apex-wealth",
+    id: "financial-advisor",
     title: "Apex Wealth Financial Platform",
     subtitle: "Institutional Portfolio Analytics",
-    description: "Fintech analytics platform with real-time chart projections, asset rebalancing calculators, and multi-currency hedge assessment tools.",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Chart.js", "Cloud APIs"],
+    category: "SaaS & Fintech",
+    description: "Fintech analytics suite with Monte Carlo projections, real-time asset rebalancing calculators, and multi-currency hedge assessment tools.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Chart.js", "Fintech"],
     github: "https://github.com/Rafin-Hasan/landing-financial-planning-advisor-2026-09-11",
-    demo: "https://github.com/Rafin-Hasan",
+    liveUrl: "https://github.com/Rafin-Hasan/landing-financial-planning-advisor-2026-09-11",
     featured: false,
-    highlights: ["Monte Carlo projections", "Sub-second rebalancing", "Tax efficiency report"]
+    isLive: false,
+    highlights: ["Monte Carlo simulations", "Portfolio rebalancing", "Tax optimization view"]
+  },
+  {
+    id: "language-app",
+    title: "LingoFlow Language Learning App",
+    subtitle: "Interactive Multi-Language Platform",
+    category: "Full-Stack & Apps",
+    description: "Mobile-first interactive educational platform featuring conversational practice drills, speech recognition feedback, and spaced repetition memory algorithms.",
+    tags: ["React", "Tailwind CSS", "Web Audio API", "LocalStorage", "EdTech"],
+    github: "https://github.com/Rafin-Hasan/landing-language-learning-app-2026-09-05",
+    liveUrl: "https://github.com/Rafin-Hasan/landing-language-learning-app-2026-09-05",
+    featured: false,
+    isLive: false,
+    highlights: ["Spaced repetition drills", "Audio pronunciation UI", "Gamified streaks"]
+  },
+  {
+    id: "coworking-space",
+    title: "Nexus Coworking & Desk Booking",
+    subtitle: "Digital Workspace Membership Platform",
+    category: "Full-Stack & Apps",
+    description: "Modern facility reservation platform featuring interactive floor plan mapping, conference room scheduling, and automated member pass management.",
+    tags: ["React", "Tailwind CSS", "Interactive SVG", "Calendar UI", "Vite"],
+    github: "https://github.com/Rafin-Hasan/landing-coworking-space-2026-09-07",
+    liveUrl: "https://github.com/Rafin-Hasan/landing-coworking-space-2026-09-07",
+    featured: false,
+    isLive: false,
+    highlights: ["Interactive floor layout", "Real-time desk reservation", "Pass generator"]
+  },
+  {
+    id: "center-slider",
+    title: "CenterSlider Component Library",
+    subtitle: "Zero-Dependency Infinite Carousel",
+    category: "Open Source & Tools",
+    description: "Infinitely looping, center-focused card carousel engineered with zero external dependencies, 60fps GPU acceleration, and touch-swipe physics.",
+    tags: ["JavaScript (ESNext)", "CSS3 Transforms", "Zero Dependencies", "Open Source"],
+    github: "https://github.com/Rafin-Hasan/center-slider",
+    liveUrl: "https://github.com/Rafin-Hasan/center-slider",
+    featured: false,
+    isLive: false,
+    highlights: ["0 runtime dependencies", "60 FPS GPU acceleration", "Touch & mouse drag"]
+  },
+  {
+    id: "landing-bot",
+    title: "Autonomous Daily Landing Pages Bot",
+    subtitle: "Continuous Web Application Generator",
+    category: "Open Source & Tools",
+    description: "Autonomous multi-tenant web platform generating semantic, accessible, and ultra-performant landing sites with automated GitHub commits and daily CI/CD deployments.",
+    tags: ["Node.js", "GitHub Actions", "Puppeteer", "Tailwind CSS", "Automation"],
+    github: "https://github.com/Rafin-Hasan/daily-landing-pages-bot",
+    liveUrl: "https://github.com/Rafin-Hasan/daily-landing-pages-bot",
+    featured: false,
+    isLive: false,
+    highlights: ["Automated daily deployment", "100 Lighthouse score", "Self-maintaining CI"]
   }
 ];
 
